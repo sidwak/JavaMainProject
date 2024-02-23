@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link  href="StyleTheme.css" rel="stylesheet">
+</head>
+<body>
+  <!--NavBar-->
+  <header class="p-3 text-bg-dark">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <div style="width: 48px; height: 48px;" class="bg-light"></div>
+        </a>
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="#" class="nav-link px-2 text-white">Home</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+        </ul>
+        <div style="width: 36px; height: 36px;" class="bg-light me-2"></div>
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+          
+          <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search...">
+        </form>
+        <div class="text-end">
+          <button type="button" class="btn btn-outline-light me-2">Login</button>
+          <button type="button" class="btn btn-warning">Sign-up</button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="container-md" id="topParentCont">
+    <!--Carousel-->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+      <!-- Indicators/dots -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+      </div>    
+      <!-- The slideshow/carousel -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="Images/imgdefault.jpg" alt="Los Angeles" class="d-block w-100" style="object-fit: cover;">
+        </div>
+        <div class="carousel-item">
+          <img src="Images/mclaren-765lt.jpg" alt="Chicago" class="d-block w-100" style="object-fit: cover;">
+        </div>
+        <div class="carousel-item">
+          <img src="Images/imgdefault.jpg" alt="New York" class="d-block w-100" style="object-fit: cover;">
+        </div>
+      </div>    
+      <!-- Left and right controls/icons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+    <!--Hero-->
+    <div class="container col-xxl-8 px-4 py-5">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img src="Images/imgdefault.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Responsive left-aligned hero with image</h1>
+          <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Features-->
+    <div class="container px-4 py-5" id="featured-3">
+      <h2 class="pb-2 border-bottom">Columns with icons</h2>
+      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        <div class="feature col">
+          <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+            <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"></use></svg>
+          </div>
+          <h3 class="fs-2 text-body-emphasis">Featured title</h3>
+          <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+          <a href="#" class="icon-link">
+            Call to action
+            <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+          </a>
+        </div>
+        <div class="feature col">
+          <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+            <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"></use></svg>
+          </div>
+          <h3 class="fs-2 text-body-emphasis">Featured title</h3>
+          <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+          <a href="#" class="icon-link">
+            Call to action
+            <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+          </a>
+        </div>
+        <div class="feature col">
+          <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+            <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
+          </div>
+          <h3 class="fs-2 text-body-emphasis">Featured title</h3>
+          <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+          <a href="#" class="icon-link">
+            Call to action
+            <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!--Highlights Exhibits-->
+    <div class="container px-4 py-5" id="custom-cards">
+      <h2 class="pb-2 border-bottom">Highlights</h2>
+      <div class="row row-cols-1 row-cols-lg-3 row-cols-xl-4 align-items-stretch mx-0 py-5">
+        <div class="col card pe-2 ps-0 pt-3 border-0">
+          <div class="rounded-4 overflow-hidden">
+            <img class="card-img-top" src="Images/imgdefault.jpg" style="height:400px; object-fit: cover;">
+            <div class="card-img-overlay p-0 ms-4 mb-3 d-flex align-items-end">
+              <h3 class="display-6 lh-1 fw-bold mb-0">From Artist Name Here</h3> 
+          </div>
+          </div>
+        </div>
+        <div class="col card px-2 pt-3 border-0">
+          <div class="rounded-4 border-2 overflow-hidden">
+            <img class="card-img-top" src="Images/imgdefault.jpg" style="height:400px; object-fit: cover;">
+            <div class="card-img-overlay p-0 ms-4 mb-3 d-flex align-items-end">
+              <h3 class="display-6 lh-1 fw-bold mb-0">From Artist Name Here</h3> 
+          </div>
+          </div>
+        </div>
+        <div class="col card px-2 pt-3 border-0">
+          <div class="rounded-4 border-2 overflow-hidden">
+            <img class="card-img-top" src="Images/imgdefault.jpg" style="height:400px; object-fit: cover;">
+            <div class="card-img-overlay p-0 ms-4 mb-3 d-flex align-items-end">
+              <h3 class="display-6 lh-1 fw-bold mb-0">From Artist Name Here</h3> 
+          </div>
+          </div>
+        </div>
+        <div class="col card ps-2 pe-0 pt-3 border-0">
+          <div class="rounded-4 border-2 overflow-hidden">
+            <img class="card-img-top" src="Images/imgdefault.jpg" style="height:400px; object-fit: cover;">
+            <div class="card-img-overlay p-0 ms-4 mb-3 d-flex align-items-end">
+              <h3 class="display-6 lh-1 fw-bold mb-0">From Artist Name Here</h3> 
+          </div>
+          </div>
+        </div>
+        <!-- <div class="col card rounded-4 p-0 overflow-hidden">
+          <img class="card-img-top" src="Images/imgdefault.jpg" style="height:400px; object-fit: cover;">
+          <div class="card-img-overlay p-0 ms-3 mb-3 d-flex align-items-end">
+            <h3 class="display-6 lh-1 fw-bold mb-0">From Artist Name Here</h3> 
+          </div>
+        </div> -->
+      </div>
+    </div>
+    <!--Highlights Artists-->
+    <div class="container px-4 py-5" id="custom-cards">
+      <h2 class="pb-2 border-bottom">Artists Highlights</h2>
+      <div class="row row-cols-1 row-cols-lg-4 align-items-stretch g-4 py-5 mx-0 mt-0">
+        <div class="col card p-1 rounded-4 border-0" style="height: 400">
+          <div class="card card-cover overflow-hidden rounded-4 text-start border-0">
+            <img src="Images/imgdefault.jpg"/ class="rounded-circle mx-auto mt-3" style="height: 220px; width: 220px; object-fit: cover;">                   
+          </div>
+          <div class="card card-body p-0 border-0 text-center">
+            <h3 class="mt-auto mb-3 pt-3 display-6 lh-1 fw-bold m-0">From Artist Name Here</h3> 
+          </div>
+        </div>
+        <div class="col card p-1 rounded-4 border-0" style="height: 400">
+          <div class="card card-cover overflow-hidden rounded-4 text-start border-0">
+            <img src="Images/mclaren-765lt.jpg"/ class="rounded-circle mx-auto mt-3" style="height: 220px; width: 220px; object-fit: cover;">                   
+          </div>
+          <div class="card card-body p-0 border-0 text-center">
+            <h3 class="mt-auto mb-3 pt-3 display-6 lh-1 fw-bold m-0">From Artist Name Here</h3> 
+          </div>
+        </div>
+        <div class="col card p-1 rounded-4 border-0" style="height: 400">
+          <div class="card card-cover overflow-hidden rounded-4 text-start border-0">
+            <img src="Images/imgdefault.jpg"/ class="rounded-circle mx-auto mt-3" style="height: 220px; width: 220px; object-fit: cover;">                   
+          </div>
+          <div class="card card-body p-0 border-0 text-center">
+            <h3 class="mt-auto mb-3 pt-3 display-6 lh-1 fw-bold m-0">From Artist Name Here</h3> 
+          </div>
+        </div>
+        <div class="col card p-1 rounded-4 border-0" style="height: 400">
+          <div class="card card-cover overflow-hidden rounded-4 text-start border-0">
+            <img src="Images/imgdefault.jpg"/ class="rounded-circle mx-auto mt-3" style="height: 220px; width: 220px; object-fit: cover;">                   
+          </div>
+          <div class="card card-body p-0 border-0 text-center">
+            <h3 class="mt-auto mb-3 pt-3 display-6 lh-1 fw-bold m-0">From Artist Name Here</h3> 
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container bg-primary" style="height:400px"></div>
+  </div>
+</body>
+</html>
