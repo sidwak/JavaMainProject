@@ -9,6 +9,12 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <link  href="StyleTheme.css" rel="stylesheet">
 </head>
+<!-- <body class="bg"
+style="background-image: 
+url('Images/Background.png');background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+    width: 100%;"> -->
 <body>
   <!--NavBar-->
   <header class="p-3 border-bottom mb-3 bg-primary">
@@ -30,9 +36,22 @@
           <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search...">
         </form> -->
         <a href="#" class="nav-link px-2 text-white">For Artists</a>
-        <div class="text-end">
+        <div class="d-flex text-end">
           <button type="button" class="btn btn-outline-light me-2" onclick="window.location.href='LoginPage.html';">Login</button>
-          <button type="button" class="btn btn-warning" onclick="window.location.href='SignupPage.html';">Sign-up</button>
+          <button type="button" class="btn btn-warning text-dark" onclick="window.location.href='SignupPage.html';">Sign-up</button>
+          <div class="dropdown ms-2">
+            <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </button>
+            <ul class="dropdown-menu">
+              <li><button class="dropdown-item" type="button" onclick="window.location.href='AddExhibit.html';">Add Exhibit</button></li>
+              <li><button class="dropdown-item" type="button">Delete Exhibit</button></li>
+              <li><button class="dropdown-item" type="button">Publish Blog</button></li>
+              <li><button class="dropdown-item" type="button">Account Setup</button></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><button class="dropdown-item" type="button">Logout</button></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
