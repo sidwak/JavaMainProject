@@ -1,12 +1,6 @@
-.npx-bg-primary {
-    background-color: #394867;
+.efcard {
+    transition: transform 0.2s ease;
 }
-.npx-bg-secondary {
-    background-color: #212A3E;
-}
-.npx-bg-tertiary {
-    background-color: #9BA4B5;
-}
-.npx-bg-background {
-    background-color: #F1F6F9;
+.efcard:hover {
+    transform: scale(1.05);
 }
