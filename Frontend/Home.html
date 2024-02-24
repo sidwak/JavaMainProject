@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
+<html lang="en">
 <head>
   <title>Bootstrap Example</title>
   <meta charset="utf-8">
@@ -8,9 +8,9 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <link  href="StyleTheme.css" rel="stylesheet">
 </head>
-<body>
+<body class="npx-bg-background">
   <!--NavBar-->
-  <header class="p-3 text-bg-dark">
+  <header class="p-3 npx-bg-secondary">
     <div class="container">
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
         <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
@@ -19,16 +19,16 @@
 
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
           <li><a href="#" class="nav-link px-2 text-white">Home</a></li>
-          <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
-          <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
-          <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+          <li><a href="Exhibits.html" class="nav-link px-2 text-white">Exhibits</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">Artists</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">Blog</a></li>
           <li><a href="#" class="nav-link px-2 text-white">About</a></li>
         </ul>
-        <div style="width: 36px; height: 36px;" class="bg-light me-2"></div>
-        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-          
+        <!-- <div style="width: 36px; height: 36px;" class="bg-light me-2"></div> 
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">         
           <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search...">
-        </form>
+        </form> -->
+        <a href="#" class="nav-link px-2 text-white">For Artists</a>
         <div class="text-end">
           <button type="button" class="btn btn-outline-light me-2">Login</button>
           <button type="button" class="btn btn-warning">Sign-up</button>
@@ -83,7 +83,7 @@
     </div>
     <!--Features-->
     <div class="container px-4 py-5" id="featured-3">
-      <h2 class="pb-2 border-bottom">Columns with icons</h2>
+      <h2 class="pb-2 border-bottom border-dark">Columns with icons</h2>
       <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
         <div class="feature col">
           <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
@@ -124,7 +124,7 @@
     <div class="container px-4 py-5" id="custom-cards">
       <h2 class="pb-2 border-bottom">Highlights</h2>
       <div class="row row-cols-1 row-cols-lg-3 row-cols-xl-4 align-items-stretch mx-0 py-5">
-        <div class="col card pe-2 ps-0 pt-3 border-0">
+        <div class="col card pe-2 ps-0 pt-3 border-0 npx-bg-background">
           <div class="rounded-4 overflow-hidden">
             <img class="card-img-top" src="Images/imgdefault.jpg" style="height:400px; object-fit: cover;">
             <div class="card-img-overlay p-0 ms-4 mb-3 d-flex align-items-end">
@@ -132,7 +132,7 @@
           </div>
           </div>
         </div>
-        <div class="col card px-2 pt-3 border-0">
+        <div class="col card px-2 pt-3 border-0 npx-bg-background">
           <div class="rounded-4 border-2 overflow-hidden">
             <img class="card-img-top" src="Images/imgdefault.jpg" style="height:400px; object-fit: cover;">
             <div class="card-img-overlay p-0 ms-4 mb-3 d-flex align-items-end">
@@ -140,7 +140,7 @@
           </div>
           </div>
         </div>
-        <div class="col card px-2 pt-3 border-0">
+        <div class="col card px-2 pt-3 border-0 npx-bg-background">
           <div class="rounded-4 border-2 overflow-hidden">
             <img class="card-img-top" src="Images/imgdefault.jpg" style="height:400px; object-fit: cover;">
             <div class="card-img-overlay p-0 ms-4 mb-3 d-flex align-items-end">
@@ -148,7 +148,7 @@
           </div>
           </div>
         </div>
-        <div class="col card ps-2 pe-0 pt-3 border-0">
+        <div class="col card ps-2 pe-0 pt-3 border-0 npx-bg-background">
           <div class="rounded-4 border-2 overflow-hidden">
             <img class="card-img-top" src="Images/imgdefault.jpg" style="height:400px; object-fit: cover;">
             <div class="card-img-overlay p-0 ms-4 mb-3 d-flex align-items-end">
@@ -168,41 +168,53 @@
     <div class="container px-4 py-5" id="custom-cards">
       <h2 class="pb-2 border-bottom">Artists Highlights</h2>
       <div class="row row-cols-1 row-cols-lg-4 align-items-stretch g-4 py-5 mx-0 mt-0">
-        <div class="col card p-1 rounded-4 border-0" style="height: 400">
-          <div class="card card-cover overflow-hidden rounded-4 text-start border-0">
+        <div class="col card p-1 rounded-4 border-0 npx-bg-background" style="height: 400">
+          <div class="card card-cover overflow-hidden rounded-4 text-start border-0 npx-bg-background">
             <img src="Images/imgdefault.jpg"/ class="rounded-circle mx-auto mt-3" style="height: 220px; width: 220px; object-fit: cover;">                   
           </div>
-          <div class="card card-body p-0 border-0 text-center">
+          <div class="card card-body p-0 border-0 text-center npx-bg-background">
             <h3 class="mt-auto mb-3 pt-3 display-6 lh-1 fw-bold m-0">From Artist Name Here</h3> 
           </div>
         </div>
-        <div class="col card p-1 rounded-4 border-0" style="height: 400">
-          <div class="card card-cover overflow-hidden rounded-4 text-start border-0">
+        <div class="col card p-1 rounded-4 border-0 npx-bg-background" style="height: 400">
+          <div class="card card-cover overflow-hidden rounded-4 text-start border-0 npx-bg-background">
             <img src="Images/mclaren-765lt.jpg"/ class="rounded-circle mx-auto mt-3" style="height: 220px; width: 220px; object-fit: cover;">                   
           </div>
-          <div class="card card-body p-0 border-0 text-center">
+          <div class="card card-body p-0 border-0 text-center npx-bg-background">
             <h3 class="mt-auto mb-3 pt-3 display-6 lh-1 fw-bold m-0">From Artist Name Here</h3> 
           </div>
         </div>
-        <div class="col card p-1 rounded-4 border-0" style="height: 400">
-          <div class="card card-cover overflow-hidden rounded-4 text-start border-0">
+        <div class="col card p-1 rounded-4 border-0 npx-bg-background" style="height: 400">
+          <div class="card card-cover overflow-hidden rounded-4 text-start border-0 npx-bg-background">
             <img src="Images/imgdefault.jpg"/ class="rounded-circle mx-auto mt-3" style="height: 220px; width: 220px; object-fit: cover;">                   
           </div>
-          <div class="card card-body p-0 border-0 text-center">
+          <div class="card card-body p-0 border-0 text-center npx-bg-background">
             <h3 class="mt-auto mb-3 pt-3 display-6 lh-1 fw-bold m-0">From Artist Name Here</h3> 
           </div>
         </div>
-        <div class="col card p-1 rounded-4 border-0" style="height: 400">
-          <div class="card card-cover overflow-hidden rounded-4 text-start border-0">
+        <div class="col card p-1 rounded-4 border-0 npx-bg-background" style="height: 400">
+          <div class="card card-cover overflow-hidden rounded-4 text-start border-0 npx-bg-background">
             <img src="Images/imgdefault.jpg"/ class="rounded-circle mx-auto mt-3" style="height: 220px; width: 220px; object-fit: cover;">                   
           </div>
-          <div class="card card-body p-0 border-0 text-center">
+          <div class="card card-body p-0 border-0 text-center npx-bg-background">
             <h3 class="mt-auto mb-3 pt-3 display-6 lh-1 fw-bold m-0">From Artist Name Here</h3> 
           </div>
         </div>
       </div>
-    </div>
-    <div class="container bg-primary" style="height:400px"></div>
+    </div>  
+  </div>
+  <!--Footer-->
+  <div class="npx-bg-secondary">
+    <footer class="py-3 my-0">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Features</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-white">About</a></li>
+      </ul>
+      <p class="text-center text-white">© 2024 Company, Inc</p>
+    </footer>
   </div>
 </body>
 </html>
