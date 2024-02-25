@@ -45,11 +45,11 @@ url('Images/Background.png');background-repeat: no-repeat;
             </button>
             <ul class="dropdown-menu">
               <li><button class="dropdown-item" type="button" onclick="window.location.href='AddExhibit.html';">Add Exhibit</button></li>
-              <li><button class="dropdown-item" type="button">Delete Exhibit</button></li>
-              <li><button class="dropdown-item" type="button">Publish Blog</button></li>
-              <li><button class="dropdown-item" type="button">Account Setup</button></li>
+              <li><button class="dropdown-item" type="button" onclick="window.location.href='DeleteExhibit.html';">Delete Exhibit</button></li>
+              <li><button class="dropdown-item" type="button" onclick="window.location.href='PublishBlog.html';">Publish Blog</button></li>
+              <li><button class="dropdown-item" type="button" onclick="window.location.href='AccountSetup.html';">Account Setup</button></li>
               <li><hr class="dropdown-divider"></li>
-              <li><button class="dropdown-item" type="button">Logout</button></li>
+              <li><button class="dropdown-item" type="button" onclick="onlogout()">Logout</button></li>
             </ul>
           </div>
         </div>
@@ -236,5 +236,10 @@ url('Images/Background.png');background-repeat: no-repeat;
       <p class="text-center text-white">© 2024 Company, Inc</p>
     </footer>
   </div>
+  <script>
+    function onlogout(){
+      alert("logout succesful");
+    }
+  </script>
 </body>
 </html>

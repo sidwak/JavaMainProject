@@ -137,9 +137,9 @@
       </div>
     </div>
     <!-- Button to Open the Modal -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
       Open modal
-    </button>
+    </button> -->
 
     <!-- The Modal -->
     <div class="modal fade" id="myModal">
@@ -155,7 +155,7 @@
             <form>
               <!-- <img class="mb-4" src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57"> -->
               <h1 class="h4 mb-3 fw-normal">Contact artist to buy</h1> 
-              <div class="d-flex justify-content-between pb-2">
+              <div class="d-flex flex-column pb-2">
                 <ul class="list-group list-group-horizontal">
                   <li class="list-group-item">Exhibit Name</li>
                   <li class="list-group-item" id="model_exname">sdsdsds</li>
@@ -183,12 +183,15 @@
               </div>
               <button class="btn btn-primary w-100 py-2 mt-3" type="submit">Submit</button>
             </form> 
+            <div class="alert alert-success alert-dismissible hide show m-0 mt-3 p-2">
+              <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+              <strong>Success!</strong><p>Your buy request is successfully send to the artist</p>
+            </div>
           </div>
           <!-- Modal footer -->
           <div class="modal-footer p-3 pb-3 m-0">
             <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
           </div>
-
         </div>
       </div>
     </div>
