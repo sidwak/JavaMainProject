@@ -1,0 +1,6 @@
+.efcard {
+    transition: transform 0.2s ease;
+}
+.efcard:hover {
+    transform: scale(1.05);
+}

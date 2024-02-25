@@ -1,0 +1,35 @@
+create table artist(
+name varchar(20),
+email varchar(20),
+password varchar(20),
+country varchar(20),
+prof varchar(20)
+);
+
+create table exhibits(
+exname varchar(20),
+exdesp varchar(40),
+sale varchar(20),
+price varchar(20),
+artid varchar(20),
+artemail varchar(20)
+);
+
+
+buy thing and buyrequestpage
+
+create table blogs(
+artid varchar(20),
+artemail varchar(20),
+title varchar(40),
+content varchar(200)
+);
+
+create table buyorder(
+cname varchar(20),
+cemail varchar(20),
+cprice varchar(20),
+cnotes varchar(20),
+exname varchar(20),
+artid varchar(20)
+);
